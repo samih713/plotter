@@ -11,8 +11,8 @@ fi
 
 LIBS="-lm -lraylib"
 EXECUTABLE="./build/plotter"
-INCLUDES="-I./includes -I./"
-SRCS="srcs/App.cpp srcs/Renderer.cpp  main.cpp"
+INCLUDES="-I./includes -I./ -I./srcs"
+SRCS="srcs/App.cpp srcs/Renderer.cpp srcs/Series.cpp  main.cpp"
 
 set -e
 

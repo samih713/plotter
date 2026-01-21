@@ -26,10 +26,7 @@ int main()
     plt::App app;
     app.init();
 
-    std::vector<float> x_input = std::vector<float>{5200, 7800, 10300, 12750, 14900, 17100, 19650, 21900, 24750, 27600};
-    std::vector<float> y_input = std::vector<float>{195000, 168000, 149000, 131000, 116000, 102000, 88000, 74000, 56000, 34000};
-
-    plt::Series data(x_input, y_input);
+    plt::Series data("./data/data.csv");
     plt::Series world = to_world(data);
     app.set_series(data, world);
 

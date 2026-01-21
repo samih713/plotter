@@ -2,6 +2,7 @@
 #define RENDERER_HPP
 
 #include "plotter.hpp"
+#include "Series.hpp"
 
 namespace plt
 {
